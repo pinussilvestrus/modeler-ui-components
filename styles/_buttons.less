@@ -1,0 +1,41 @@
+button.cm-btn {
+  padding: 2px 16px;
+  background-color: var(--color-grey-225-10-95);
+  border: none;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: var(--color-grey-225-10-90);
+  }
+
+  &.cm-btn-primary {
+    color: white;
+    background-color: var(--color-blue-205-100-50);
+
+    &:hover {
+      background-color: var(--color-blue-205-100-45);
+    }
+  }
+
+  a {
+    color: var(--color-blue-205-100-50);
+    text-decoration: underline;
+
+    &:hover, &:active, &:focus {
+      color: var(--color-blue-205-100-45);
+    }
+  }
+
+  &.cm-btn-error {
+    color: var(--color-red-360-100-45);
+  }
+
+  &.cm-btn-icon {
+    width: 36px;
+    color: var(--color-grey-225-10-35);
+
+    svg {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>cloud-connect-connected</title>
+    <g id="cloud-connect-connected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M17.721875,5.9075 C17.169375,3.104375 14.7075,1 11.75,1 C9.401875,1 7.3625,2.3325 6.346875,4.2825 C3.90125,4.5425 2,6.614375 2,9.125 C2,11.814375 4.185625,14 6.875,14 L17.4375,14 C19.68,14 21.5,12.18 21.5,9.9375 C21.5,7.7925 19.834375,6.05375 17.721875,5.9075 Z M10.125,11.5625 L7.28125,8.71875 L8.426875,7.573125 L10.125,9.263125 L14.33375,5.0625 L15.479375,6.208125 L10.125,11.5625 Z" id="cloud" fill="#505562" fill-rule="nonzero"></path>
+    </g>
+</svg>
