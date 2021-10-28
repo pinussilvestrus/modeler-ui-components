@@ -1,0 +1,36 @@
+.cm-overlay {
+  z-index: 101;
+  position: absolute;
+  left: -1000px;
+  max-width: 240px;
+  padding: 4px;
+  background-color: var(--color-white);
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 16%), 0 2px 16px 0 rgb(0 0 0 / 16%);
+
+  &.cm-overlay-content {
+    padding: 0;
+    width: 320px;
+    max-width: 320px;
+
+    h2 {
+      position: relative;
+      padding: 0 12px;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .cm-overlay-group {
+      padding: 12px 0;
+    }
+
+    .cm-btn {
+      display: block;
+      width: calc(100% - 24px);
+      max-width: none;
+      text-align: center;
+      padding: 2px 16px;
+      margin: 12px 12px 2px;
+      border-radius: 4px;
+    }
+  }
+}

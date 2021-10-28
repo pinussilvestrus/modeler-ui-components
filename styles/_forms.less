@@ -1,0 +1,100 @@
+.cm-form-element {
+  position: relative;
+  margin: 2px 32px 6px 12px;
+}
+
+.cm-form-element label,
+.cm-form-element input,
+.cm-form-element textarea,
+.cm-form-element select {
+  display: block;
+  width: 100%;
+  outline: none;
+}
+
+.cm-form-element input:disabled,
+.cm-form-element textarea:disabled,
+.cm-form-element select:disabled {
+  border-color: var(--color-grey-225-10-90);
+  background-color: var(--color-grey-225-10-97);
+  color: var(--color-grey-225-10-55);
+}
+
+.cm-form-element label,
+.cm-label {
+  font-size: 13px;
+  margin: 2px 0;
+}
+
+.cm-label {
+  border-radius: 0;
+}
+
+.cm-form-element.row label {
+  border-radius: 3px 3px 0 0;
+  margin: 0 0 -1px 0;
+}
+
+.cm-label:nth-of-type(1) {
+  border-radius: 3px 0 0 0;
+}
+
+.cm-label:nth-of-type(2) {
+  border-radius: 0 3px 0 0;
+}
+
+.cm-form-element input,
+.cm-form-element textarea,
+.cm-form-element select {
+  padding: 3px 6px 2px;
+  border: 1px solid var(--color-grey-225-10-75);
+  border-radius: 2px;
+  background-color: var(--color-grey-225-10-97);
+}
+
+.cm-form-element input::placeholder {
+  color: var(--color-grey-225-10-75);
+  font-style: italic;
+}
+
+.cm-form-element.warning input,
+.cm-form-element.warning textarea,
+.cm-form-element.warning select {
+  border-color: var(--color-red-360-100-45);
+  background-color: var(--color-red-360-100-97);
+}
+
+.cm-form-element input:focus,
+.cm-form-element textarea:focus,
+.cm-form-element select:focus {
+  background-color: var(--color-blue-205-100-95);
+  border: 1px solid var(--color-blue-205-100-50);
+}
+
+.cm-form-element.warning input:focus,
+.cm-form-element.warning textarea:focus,
+.cm-form-element.warning select:focus {
+  background-color: var(--color-red-360-100-97);
+  border: 1px solid var(--color-red-360-100-45);
+}
+
+.cm-form-element textarea {
+  height: 74px;
+  max-height: 310px;
+  resize: vertical;
+}
+
+.cm-form-element textarea:disabled {
+  max-height: 305px;
+}
+
+.cm-description {
+  color: var(--color-grey-225-10-35);
+  margin: 4px 0;
+  font-size: 13px;
+  line-height: var(--line-height-condensed);
+}
+
+.cm-form-element.warning .cm-description {
+  color: var(--color-red-360-100-45);
+}

@@ -1,8 +1,9 @@
 <script>
+  import DeploymentOverlay from './DeploymentOverlay.svelte';
+
   import CloudConnectConnectedIcon from 'modeler-ui-components/dist/icons/CloudConnectConnected.svg';
   import DeployIcon from 'modeler-ui-components/dist/icons/Deploy.svg';
   import FeedbackIcon from 'modeler-ui-components/dist/icons/Feedback.svg';
-  import LintingErrorIcon from 'modeler-ui-components/dist/icons/LintingError.svg';
   import RunIcon from 'modeler-ui-components/dist/icons/Run.svg';
 </script>
 
@@ -49,7 +50,7 @@
     <button class="cm-btn cm-btn-icon" title="Start an process instance">
       {@html RunIcon}
     </button>
-    <button class="cm-btn cm-btn-error" title="14 validation errors">14 errors</button>
+    <!-- <button class="cm-btn cm-btn-error" title="14 validation errors">14 errors</button> -->
   </div>
   <div class="app-scope">
     <button class="cm-btn cm-btn-icon" title="Camunda Cloud connection status">
@@ -62,3 +63,5 @@
     <button class="cm-btn" title="Version information">4.11.0</button>
   </div>
 </div>
+
+<DeploymentOverlay />
