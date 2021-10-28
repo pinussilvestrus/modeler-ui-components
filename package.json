@@ -9,6 +9,7 @@
     "all": "run-s build lint",
     "lint": "eslint .",
     "prepublishOnly": "run-s build",
+    "postinstall": "cd example && npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "del-cli dist",
     "build:styles": "lessc styles/_base.less dist/styles/modeler-ui.css",
