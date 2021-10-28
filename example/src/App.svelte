@@ -1,4 +1,5 @@
 <script>
+	import Header from './components/Header.svelte';
 	import Modeler from './components/Modeler.svelte';
 	import StatusBar from './components/StatusBar.svelte';
 
@@ -9,6 +10,7 @@
 
 <main>
 	<div class="app-container">
+		<Header />
 		<Modeler xml={ diagram } />
 		<StatusBar />
 	</div>
@@ -43,8 +45,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-size: cover;
-    background-position: center;
-		background-image: url(../wallpaper-mac.jpg);
+		background: #10ad73;
 	}
 </style>
