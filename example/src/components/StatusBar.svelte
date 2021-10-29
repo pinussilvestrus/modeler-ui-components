@@ -5,6 +5,16 @@
   import DeployIcon from 'modeler-ui-components/dist/icons/Deploy.svg';
   import FeedbackIcon from 'modeler-ui-components/dist/icons/Feedback.svg';
   import RunIcon from 'modeler-ui-components/dist/icons/Run.svg';
+
+  let hideDeployOverlay = true;
+  const toggleDeployShow = () => {
+    hideDeployOverlay = !hideDeployOverlay;
+  }
+  const deploy = () => {
+    toggleDeployShow();
+
+    // todo: show notification
+  }
 </script>
 
 <style>
@@ -29,6 +39,10 @@
     background-color: var(--color-grey-225-10-80);
   }
 
+  #status-bar .cm-btn.active {
+    background-color: var(--color-grey-225-10-75);
+  }
+
   /* svelte quirk to enable styles for svgs */
   :global(#status-bar .cm-btn-icon svg) {
     margin-left: -3px;
@@ -44,7 +58,7 @@
 <div id="status-bar">
   <div class="file-scope">
     <button class="cm-btn" title="Select execution platform and version">Camunda Cloud 1.2</button>
-    <button class="cm-btn cm-btn-icon" title="Deploy">
+    <button class="cm-btn cm-btn-icon" class:active="{!hideDeployOverlay}" title="Deploy" on:click="{ toggleDeployShow }">
       {@html DeployIcon}
     </button>
     <button class="cm-btn cm-btn-icon" title="Start an process instance">
@@ -64,4 +78,4 @@
   </div>
 </div>
 
-<DeploymentOverlay />
+<DeploymentOverlay hidden={ hideDeployOverlay } onDeploy={ deploy } />
