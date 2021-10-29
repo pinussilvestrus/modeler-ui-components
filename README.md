@@ -86,6 +86,21 @@ or overlays
 </div>
 ```
 
+or notifications.
+
+```html
+<div class="cm-notification-container">
+  <div class="cm-notification slidein">
+    <button 
+      class="cm-btn cm-btn-icon cm-btn-close" 
+      title="Close notification">
+        {@html NotificationCloseIcon }
+    </button>
+    <span>{@html NotificationSuccessIcon}</span> <h3>Deployment succeeded</h3>
+  </div>
+</div>
+```
+
 To use the available icons, simply import them into your application (bundler will be needed).
 
 ```js
