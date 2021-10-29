@@ -18,7 +18,7 @@ npm run build
 
 ## Usage
 
-To integrate the basic styles, colors and font definitions, integrate the style sheet to your web application.
+Integrate the style sheet to your web application to add the basic styles, colors, and font definitions.
 
 ```js
 import 'modeler-ui-components/dist/styles/modeler-ui.css';
@@ -49,7 +49,7 @@ All variables are available in your application.
 }
 ```
 
-Use the defined class selectors to apply the styles, e.g. for form elements
+Use the defined class selectors to apply the styles, e.g., for form elements
 
 ```html
 <div class="cm-form-element">
@@ -57,6 +57,8 @@ Use the defined class selectors to apply the styles, e.g. for form elements
   <input type="text" id="" name="name" value="diagram">
 </div>
 ```
+
+![Form element](./docs/form-element.png)
 
 or overlays
 
@@ -86,6 +88,8 @@ or overlays
 </div>
 ```
 
+![Overlay](./docs/overlay.png)
+
 or notifications.
 
 ```html
@@ -101,7 +105,9 @@ or notifications.
 </div>
 ```
 
-To use the available icons, simply import them into your application (bundler will be needed).
+![Notification](./docs/notification.png)
+
+To use the available icons, import them into your application. A bundler is likely needed to consume then.
 
 ```js
 import CloudConnectConnectedIcon from 'modeler-ui-components/dist/icons/CloudConnectConnected.svg';
