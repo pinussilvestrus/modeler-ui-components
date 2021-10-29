@@ -5,6 +5,8 @@
   import DeployIcon from 'modeler-ui-components/dist/icons/Deploy.svg';
   import FeedbackIcon from 'modeler-ui-components/dist/icons/Feedback.svg';
   import RunIcon from 'modeler-ui-components/dist/icons/Run.svg';
+  import NotificationSuccessIcon from 'modeler-ui-components/dist/icons/NotificationSuccess.svg';
+	import NotificationCloseIcon from 'modeler-ui-components/dist/icons/NotificationClose.svg';
 
   let hideDeployOverlay = true;
   const toggleDeployShow = () => {
@@ -12,8 +14,12 @@
   }
   const deploy = () => {
     toggleDeployShow();
+    toggleNotificationShow();
+  }
 
-    // todo: show notification
+  let hideDeployNotfication = true;
+  const toggleNotificationShow = () => {
+    hideDeployNotfication = !hideDeployNotfication;
   }
 </script>
 
@@ -79,3 +85,17 @@
 </div>
 
 <DeploymentOverlay hidden={ hideDeployOverlay } onDeploy={ deploy } />
+
+<div class="cm-notification-container" style="top: 1027px; left: 192px;">
+  {#if !hideDeployNotfication}
+    <div class="cm-notification slidein">
+      <button 
+        class="cm-btn cm-btn-icon cm-btn-close" 
+        title="Close notification"
+        on:click="{ toggleNotificationShow }">
+          {@html NotificationCloseIcon }
+      </button>
+      <span>{@html NotificationSuccessIcon}</span> <h3>Deployment succeeded</h3>
+    </div>
+  {/if}
+</div>

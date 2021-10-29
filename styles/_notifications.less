@@ -1,0 +1,46 @@
+.cm-notification-container {
+	max-height: 80vh;
+	overflow: hidden;
+	position: fixed;
+	transform: translate(30px, calc(-100% - 52px));
+	z-index: 10;
+}
+
+.cm-notification {
+	background-color: var(--color-grey-225-10-95);
+	background-position: 16px 16px;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	border: 1px solid var(--color-grey-225-10-85);
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.16);
+	margin: 10px 10px 20px 10px;
+	padding: 5px 10px 5px 15px;
+	position: relative;
+	width: 330px;
+
+	.cm-btn-icon.cm-btn-close {
+		border-radius: 50%;
+		height: 24px;
+		padding: 0;
+		position: absolute;
+		right: 16px;
+		top: 16px;
+		width: 24px;
+	}
+
+  :not(.cm-btn-icon) svg {
+    position: absolute;
+    left: 16px;
+		top: 16px;
+  }
+
+	h3 {
+		padding-right: 16px;
+    margin-left: 32px;
+	}
+
+	p {
+		color: var(--color-grey-225-10-35);
+		padding-top: 6px;
+	}
+}
