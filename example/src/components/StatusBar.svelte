@@ -86,7 +86,7 @@
 
 <DeploymentOverlay hidden={ hideDeployOverlay } onDeploy={ deploy } />
 
-<div class="cm-notification-container" style="top: 1027px; left: 192px;">
+<div class="cm-notification-container" style="top: 927px; left: 192px;">
   {#if !hideDeployNotfication}
     <div class="cm-notification slidein">
       <button 

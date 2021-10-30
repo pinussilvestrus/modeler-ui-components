@@ -7,7 +7,7 @@
 
 
 {#if !hidden}
-  <div class="cm-overlay cm-overlay-content" style="top: 859px; left: 143px; transform: translate(0px, -100%);">
+  <div class="cm-overlay cm-overlay-content" style="top: 769px; left: 143px; transform: translate(0px, -100%);">
     <div class="cm-overlay-group">
       <h2>Deployment</h2>
       <div class="cm-form-element">
