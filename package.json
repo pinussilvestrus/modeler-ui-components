@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "del-cli dist",
     "build:styles": "lessc styles/_base.less dist/styles/modeler-ui.css",
-    "build:assets": "cpx \"assets/**/*\" dist",
+    "build:assets": "copyfiles --up 1 \"assets/**/*\" dist",
     "build": "run-s clean build:*",
     "start:example": "cd example && run-s dev"
   },
@@ -24,7 +24,7 @@
   "author": "Niklas Kiefer <niklas.kiefer@camunda.com> (https://github.com/pinussilvestrus)",
   "license": "MIT",
   "devDependencies": {
-    "cpx": "^1.5.0",
+    "copyfiles": "^2.4.1",
     "del-cli": "^4.0.1",
     "eslint": "^7.32.0",
     "eslint-plugin-bpmn-io": "^0.12.0",
