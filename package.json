@@ -14,7 +14,8 @@
     "clean": "del-cli dist",
     "build:styles": "lessc styles/_base.less dist/styles/modeler-ui.css",
     "build:assets": "cpx \"assets/**/*\" dist",
-    "build": "run-s clean build:*"
+    "build": "run-s clean build:*",
+    "start:example": "cd example && run-s dev"
   },
   "repository": {
     "type": "git",
